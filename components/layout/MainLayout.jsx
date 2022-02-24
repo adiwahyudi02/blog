@@ -1,5 +1,4 @@
-import { AnimatePresence } from "framer-motion";
-import Navigation from "../Navigation";
+import Navigation from "../navigation/Navigation";
 
 const MainLayout = ({ children }) => {
     return (
