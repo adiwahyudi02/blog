@@ -1,10 +1,15 @@
-import Navigation from "../../components/Navigation";
+import { getLayout } from "../../components/layout/MainLayout"
+import SlideTransition from "../../components/transition/SlideTransition"
 
-export default function Studio() {
+function Studio() {
   return (
-    <div>
-      <Navigation />
-      <h1>Studio</h1>
-    </div>
+    <SlideTransition>
+      <div>
+        <h1>Studio</h1>
+      </div>
+    </SlideTransition>
   )
 }
+
+Studio.getLayout = getLayout
+export default Studio

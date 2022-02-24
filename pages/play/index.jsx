@@ -1,10 +1,15 @@
-import Navigation from '../../components/Navigation'
+import { getLayout } from "../../components/layout/MainLayout"
+import SlideTransition from "../../components/transition/SlideTransition"
 
-export default function Play() {
+function Play() {
   return (
-    <div>
-      <Navigation />
-      <h1>Play</h1>
-    </div>
+    <SlideTransition>
+      <div>
+        <h1>Play</h1>
+      </div>
+    </SlideTransition>
   )
 }
+
+Play.getLayout = getLayout
+export default Play

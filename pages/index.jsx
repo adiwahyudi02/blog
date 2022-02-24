@@ -1,10 +1,15 @@
-import Navigation from '../components/Navigation/'
+import { getLayout } from '../components/layout/MainLayout'
+import SlideTransition from '../components/transition/SlideTransition'
 
-export default function Work() {
+function Work() {
   return (
-    <div>
-      <Navigation />
-      <h1>Work</h1>
-    </div>
+    <SlideTransition>
+      <div>
+        <h1>Work</h1>
+      </div>
+    </SlideTransition>
   )
 }
+
+Work.getLayout = getLayout
+export default Work

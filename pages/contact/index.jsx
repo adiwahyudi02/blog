@@ -1,10 +1,15 @@
-import Navigation from '../../components/Navigation'
+import { getLayout } from "../../components/layout/MainLayout"
+import SlideTransition from "../../components/transition/SlideTransition"
 
-export default function Contact() {
+function Contact() {
   return (
-    <div>
-      <Navigation />
-      <h1>Contact</h1>
-    </div>
+    <SlideTransition>
+      <div>
+        <h1>Contact</h1>
+      </div>
+    </SlideTransition>
   )
 }
+
+Contact.getLayout = getLayout
+export default Contact
