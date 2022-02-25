@@ -1,0 +1,24 @@
+@import "../../styles/utils/variables.scss";
+
+.footer {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.navMenu {
+	margin-left: 50px;
+
+	a {
+		color: darkgray;
+		text-decoration: none;
+		font-size: 1em;
+        margin-right: 40px;
+        padding: 15px 0;
+		transition: all 0.4s ease-in-out;
+        
+        &:hover, &.active {
+            color: black;
+        }
+	}
+}

@@ -1,10 +1,15 @@
+import Footer from "../Footer";
 import Navigation from "../navigation/Navigation";
+import styles from "./MainLayout.module.scss"
 
 const MainLayout = ({ children }) => {
     return (
         <div>
             <Navigation />
-            {children}
+            <main className={styles.main}>
+                {children}
+            </main>
+            <Footer />
         </div>
     );
 }

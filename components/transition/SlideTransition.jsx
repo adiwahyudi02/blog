@@ -7,7 +7,7 @@ const SlideTransition = ({ children }) => {
         exit: { opacity: 0, x: 0, y: 100 },
     }
     return (
-        <motion.main
+        <motion.div
             variants={variants}
             initial="hidden"
             animate="enter"
@@ -15,7 +15,7 @@ const SlideTransition = ({ children }) => {
             transition={{ type: 'linear', duration: 0.4 }}
         >
             {children}
-        </motion.main>
+        </motion.div>
      );
 }
  
