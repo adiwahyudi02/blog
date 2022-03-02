@@ -1,12 +1,15 @@
 @import "../../styles/utils/variables.scss";
 
 .navMenu {
-    margin: 30px;
+    margin: 30px 50px;
+	position: absolute;
+	top: 0;
+	z-index: 99;
 
 	a {
 		color: $black;
 		text-decoration: none;
-		font-size: 1.1em;
+		font-size: 1em;
         font-weight: 500;
         margin-right: 40px;
         padding: 15px 0;
@@ -19,8 +22,8 @@
 		&:nth-child(1) {
 			&.active {
 				~ {
-					.dot {
-		                width: 45px;
+					.underline {
+		                width: 40px;
 						transform: translateX(0px);
 						transition: all 0.2s ease-in-out;
                         transition-delay: 0.1s;
@@ -31,9 +34,9 @@
 		&:nth-child(2) {
 			&.active {
 				~ {
-					.dot {
-		                width: 50px;
-						transform: translateX(85px);
+					.underline {
+		                width: 47px;
+						transform: translateX(80px);
 						transition: all 0.2s ease-in-out;
                         transition-delay: 0.1s;
 					}
@@ -43,9 +46,9 @@
 		&:nth-child(3) {
 			&.active {
 				~ {
-					.dot {
+					.underline {
 		                width: 30px;
-						transform: translateX(175px);
+						transform: translateX(166px);
 						transition: all 0.2s ease-in-out;
                         transition-delay: 0.1s;
 					}
@@ -55,9 +58,9 @@
 		&:nth-child(4) {
 			&.active {
 				~ {
-					.dot {
+					.underline {
 		                width: 60px;
-						transform: translateX(250px);
+						transform: translateX(236px);
 						transition: all 0.2s ease-in-out;
                         transition-delay: 0.1s;
 					}
@@ -65,8 +68,8 @@
 			}
 		}
 	}
-	.dot {
-		width: 45px;
+	.underline {
+		width: 40px;
 		height: 2px;
 		background: $black;
 		transition: all 0.2s ease-in-out;

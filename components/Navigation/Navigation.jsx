@@ -19,7 +19,7 @@ const Navigation = () => {
             <Link href="/contact">
                 <a className={router.pathname == "/contact" ? styles.active : ""}>Contact</a>
             </Link>
-            <div className={styles.dot} />
+            <div className={styles.underline} />
         </nav>
     );
 }
