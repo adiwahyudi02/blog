@@ -7,7 +7,7 @@ const About = () => {
         <div className={styles.container}>
             <div className={styles.boxAbout}>
                 <div className={styles.textAbout}>
-                    <p><b>We're an Amsterdam based digital design agency. </b>
+                    <p><b>We are an Amsterdam based digital design agency. </b>
                         <br /><br />
                         Since 2008, we’ve been on a mission to help brands become more human in the digital era. Today we’re a tight-knit team of 20 strategists, creatives and developers, focusing on one thing: taking care of your brand across multiple digital touch-points. 
                         <br /><br />
