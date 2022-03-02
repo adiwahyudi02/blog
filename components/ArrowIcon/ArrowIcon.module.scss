@@ -1,0 +1,39 @@
+.darkArrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    div:nth-child(1) {
+        width: 70px;
+        height: 1px;
+        background: black;
+    }
+    div:nth-child(2) {
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border-right: 1px solid;
+        border-top: 1px solid;
+        margin-left: -10px;
+    }
+}
+
+.lightArrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    div:nth-child(1) {
+        width: 70px;
+        height: 1px;
+        background: white;
+    }
+    div:nth-child(2) {
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        border-right: 1px solid white;
+        border-top: 1px solid white;
+        margin-left: -10px;
+    }
+}
