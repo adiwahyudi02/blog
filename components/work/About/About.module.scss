@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.boxAbout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 100vh;
+    padding: 100px;
+    background: #f3f3f3;
+
+    .textAbout {
+        p {
+            width: 70%;
+            font-size: 13pt;
+            font-weight: lighter;
+        }
+    }
+    .textContact {
+        p {
+            font-size: 10pt;
+            font-weight: lighter;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translatex(-10px);
+    }
+    50% {
+        transform: translatex(10px);
+    }
+    100% {
+        transform: translatex(-10px);
+    }
+}
+
+.boxMoreCases {
+    width: 15vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        .link .boxArrow {
+            display: block;
+            animation: bounce 1s infinite;
+        }
+        .link h5 {
+            display: none;
+            transition: 0.4s;
+        }
+    }
+    
+    .link {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .boxArrow {
+        display: none;
+    }
+}

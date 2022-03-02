@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    background: #f3f3f3;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translatex(-10px);
+    }
+    50% {
+        transform: translatex(10px);
+    }
+    100% {
+        transform: translatex(-10px);
+    }
+}
+
+.box {
+    position: relative;
+    width: 65vw;
+    height: 60vh; 
+    background: lightgray; 
+    margin: 0px 130px;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    cursor: pointer;
+    
+        .boxArrow {
+            animation: bounce 1s infinite;
+        }
+}
+
+.boxTitle { 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+        color: white;
+        margin: 0;
+        font-weight: 400;
+    }
+    p {
+        color: white;
+        margin: 0;
+        font-size: 10pt;
+    }
+}
