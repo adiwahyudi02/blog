@@ -1,13 +1,16 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./Footer.module.scss";
+import { FaSnowflake } from "react-icons/fa";
 
 const Footer = () => {
     const router = useRouter();
 
     return ( 
         <footer className={styles.footer}>
-            <div>@#</div>
+            <div>
+                <FaSnowflake className={styles.icon}/>
+            </div>
             <nav className={styles.navMenu}>
                 <Link href="/more-cases">
                     <a className={router.pathname == "/more-cases" ? styles.active : ""}>More cases</a>

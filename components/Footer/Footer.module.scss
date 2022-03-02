@@ -3,7 +3,10 @@
 .footer {
 	display: flex;
 	align-items: center;
-	padding: 20px;
+	margin: 25px 30px;
+	position: absolute;
+	bottom: 0;
+	z-index: 0;
 }
 
 .navMenu {
@@ -12,7 +15,7 @@
 	a {
 		color: darkgray;
 		text-decoration: none;
-		font-size: 1em;
+		font-size: 0.8em;
         margin-right: 40px;
         padding: 15px 0;
 		transition: all 0.4s ease-in-out;
@@ -21,4 +24,10 @@
             color: black;
         }
 	}
+}
+
+.icon {
+	font-size: 16pt;
+	color: darkgray;
+	margin-top: 7px
 }
