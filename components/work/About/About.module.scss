@@ -1,34 +1,4 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-}
-
-.boxAbout {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80vw;
-    height: 100vh;
-    padding: 100px;
-    background: #f3f3f3;
-
-    .textAbout {
-        p {
-            width: 70%;
-            font-size: 13pt;
-            font-weight: lighter;
-        }
-    }
-    .textContact {
-        p {
-            font-size: 10pt;
-            font-weight: lighter;
-            margin-bottom: 30px;
-        }
-    }
-}
+@import "../../../styles/utils/mixins.scss";
 
 @keyframes bounce {
     0% {
@@ -42,9 +12,96 @@
     }
 }
 
-.boxMoreCases {
+.container {
+    
+    @include breakpoint(tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+    }
+}
+
+.boxAbout {
+    width: 100%;
+    padding: 50px;
+    background: #f3f3f3;
+
+    @include breakpoint(tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85vw;
+        height: 100vh;
+        padding: 100px;
+    }
+
+    .textAbout {
+        p {
+            font-size: 13pt;
+            font-weight: lighter;
+
+            @include breakpoint(tablet) {
+                width: 70%;   
+            }
+        }
+    }
+    .textContact {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        
+        @include breakpoint(tablet) {            
+            display: block;
+        }
+
+        p {
+            font-size: 10pt;
+            font-weight: lighter;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.boxMoreCasesLaptop {
     width: 15vw;
     height: 100vh;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+
+    @include breakpoint(tablet) {
+		display: flex;
+	}
+
+    &:hover {
+        .link .boxArrow {
+            display: block;
+            animation: bounce 1s infinite;
+        }
+        .link h5 {
+            display: none;
+            transition: 0.4s;
+        }
+    }
+    
+    .link {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .boxArrow {
+        display: none;
+    }
+}
+
+.boxMoreCasesTablet {
+    width: 100%;
+    height: 15vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -52,6 +109,10 @@
     justify-content: center;
     cursor: pointer;
 
+    @include breakpoint(tablet) {
+		display: none;
+	}
+    
     &:hover {
         .link .boxArrow {
             display: block;

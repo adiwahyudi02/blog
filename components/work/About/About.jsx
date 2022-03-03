@@ -29,10 +29,26 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className={styles.boxMoreCases}>
+            <div className={styles.boxMoreCasesLaptop}>
                 <div className={styles.image}>
                     <Image 
                         src="/images/image-more-casses.jpg"
+                        layout="fill"
+                        alt="image more cases"
+                        priority
+                    />
+                </div>
+                <div className={styles.link}>
+                    <div className={styles.boxArrow}>
+                        <ArrowIcon theme="light" />
+                    </div>
+                    <h5 style={{color: 'white', margin: 0}}>More Casses</h5>
+                </div>
+            </div>
+            <div className={styles.boxMoreCasesTablet}>
+                <div className={styles.image}>
+                    <Image 
+                        src="/images/image-more-casses-mobile.jpg"
                         layout="fill"
                         alt="image more cases"
                         priority

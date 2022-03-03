@@ -1,0 +1,9 @@
+@import "../../styles/utils/mixins.scss";
+
+.main {
+
+	@include breakpoint(mobileonly) {
+        width: 120vw;
+    }
+
+}

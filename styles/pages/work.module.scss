@@ -1,6 +1,11 @@
+@import "../../styles/utils/mixins.scss";
+
 .container {
-    height: 100vh;
     z-index: 99;
+
+    @include breakpoint(tablet) {
+		height: 100vh;
+	}
 }
 
 .box {
@@ -10,10 +15,30 @@
 
 .boxTitle {
     padding: 50px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(tablet) {
+		position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+	}
+}
+
+.contentLapotop {
+    display: none;
+    @include breakpoint(tablet) {
+		display: block;
+	}
+}
+
+.contentTablet {
+    display: block;
+    @include breakpoint(tablet) {
+		display: none;
+	}
 }
 
 .title {

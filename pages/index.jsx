@@ -57,10 +57,12 @@ function Work() {
             </div>
           </div>
         </div>
+
         <HorizontalScroll 
           reverseScroll={true} 
           config={{ stiffness: 70, damping: 10 }} 
           animValues={500}
+          className={styles.contentLaptop}
         >
           <div className={styles.boxContentTransparent}>
             <div />
@@ -68,6 +70,11 @@ function Work() {
           {renderContents()}
           <About />
         </HorizontalScroll>
+
+        <div className={styles.contentTablet}>
+            {renderContents()}
+            <About />
+        </div>
       </div>
     </SlideTransition>
   )
